@@ -36,3 +36,6 @@ jobs:
 
 srpm_build_deps:
   - wget
+
+packit_instances:
+  - stg
