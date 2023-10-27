@@ -20,9 +20,7 @@ jobs:
     steps:
       - name: Build test matrix
         id: build_matrix
-        uses: ekohl/gha-matrix-builder@v0
-        with:
-          base_matrix_url: "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.base_ref }}/.github/matrix.json"
+        uses: ekohl/gha-matrix-builder@clone-repo
 
   test:
     permissions:
