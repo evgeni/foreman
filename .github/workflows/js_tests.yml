@@ -1,5 +1,6 @@
 name: JavaScript
 on:
+  push:
   pull_request:
     paths:
       - 'webpack/**'
